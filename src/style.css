@@ -78,3 +78,15 @@ input:focus {
     position: absolute;
     display: block;
 }
+
+::-webkit-scrollbar{
+    width: 8px;
+    border-radius: 5px;
+    background-color: #272933;
+}
+
+#container::-webkit-scrollbar-thumb{
+    background-color: yellow;
+    border: none;
+    border-radius: 3px;
+}

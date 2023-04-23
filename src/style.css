@@ -80,13 +80,14 @@ input:focus {
 }
 
 ::-webkit-scrollbar{
-    width: 8px;
+    width: 6px;
     border-radius: 5px;
     background-color: #272933;
 }
 
 #container::-webkit-scrollbar-thumb{
-    background-color: yellow;
+    background-color: #95EBA8;
     border: none;
-    border-radius: 3px;
+    height: 4px;
+    border-radius: 5px;
 }

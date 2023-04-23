@@ -4,6 +4,8 @@ import Swal from 'sweetalert2';
 // Capturar elementos
 const btn = document.getElementById('btnPesquisar');
 const container = document.getElementById('container'); // elemento pai
+let emoji = '\u{1F4B0}';
+
 
 // Event Listenner
 btn.addEventListener('click', (event) => {
@@ -43,7 +45,7 @@ function listarMoedas(moeda, obj) {
   for (const chave in obj) {
     const caixa = document.createElement('div');
     caixa.className = 'moedas';
-    caixa.innerHTML = `🪙 ${chave}  - <span>${obj[chave].toFixed(2)}</span>`;
+    caixa.innerHTML = `${emoji} ${chave}  - <span>${obj[chave].toFixed(2)}</span>`;
     container.appendChild(caixa);
   }
 }
